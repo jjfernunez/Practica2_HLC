@@ -1,0 +1,135 @@
+.headerBG{
+  background: rgb(53,6,85);
+  background: linear-gradient(90deg, rgba(53,6,85,1) 0%, rgba(40,18,207,1) 100%);
+  position: fixed;
+  top: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  height: 10%;
+  z-index: 100;
+}
+
+* {
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+/*Botón del menu*/
+.menubtn{
+  font-weight: bold;
+  color: white;
+  padding: 16px;
+  font-size: 20px;
+  border: none;
+  border-radius: 16px;
+  
+  margin-bottom: 13px;
+}
+.menu:hover .menubtn{
+  color: lightgray;
+}
+/*div del menu*/
+.menu{
+  position: relative;
+  display: inline-block;
+  margin-top: 25px;
+}
+
+/*Div de los links del menu*/
+.menu-content{
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+ margin-top: 10px; 
+  margin-left:15px ;
+  text-align: center;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  border-radius: 16px;
+}
+
+/*Links del menu*/
+.menu-content a{
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/*Reglas específicas del ratón*/
+.menu-content a:hover{
+  background-color: #ddd;
+  border-radius: 16px;
+}
+
+.menu:hover .menu-content{
+  display: block;
+}
+
+
+
+.headerLogo{
+  position:relative;
+  margin-left: 20px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  
+}
+
+.headerLogo img{
+  width: 65px;
+}
+
+body{
+  margin: 0;
+  padding: 0;
+}
+.fondo{
+  filter: blur(4px);
+  max-width: auto;
+  max-height: auto;
+  top: 40px;
+  vertical-align: middle;
+  position: relative;
+  overflow: hidden;
+}
+
+/*.contenido{
+  overflow: scroll;
+}*/
+
+.texto{
+  color: white;
+  position: absolute;
+  top:200px;
+  left: 100px;
+  z-index: 50;
+}
+
+
+
+.footer img{
+  width: 20px;
+  filter: invert();
+}
+
+.footer img:hover{
+  width: 25px;
+}
+
+.footer{
+  background: rgb(53,6,85);
+  background: linear-gradient(90deg, rgba(53,6,85,1) 0%, rgba(40,18,207,1) 100%);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+  text-align: center;
+  color: white;
+  font-weight: bold;
+  z-index: 100;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+}

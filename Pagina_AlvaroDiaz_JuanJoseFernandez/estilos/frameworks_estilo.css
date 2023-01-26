@@ -1,0 +1,10 @@
+.textFrame h1{
+
+    text-align: center;
+}
+
+.textFrame{
+    margin-top: 50px;
+    padding: 30px;
+    text-align: justify;
+}

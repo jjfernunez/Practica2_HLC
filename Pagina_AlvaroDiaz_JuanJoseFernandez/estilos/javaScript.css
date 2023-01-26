@@ -1,0 +1,19 @@
+.textoJS {
+    text-align: justify;
+    margin-left: 30%;
+    margin-right: 30%;
+    margin-bottom: 50px;
+    margin-top: 100px;
+}
+
+.textoJS h1 {
+    text-align: center;
+}
+
+.textoJS button {
+    margin: 0;
+    position: absolute;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
