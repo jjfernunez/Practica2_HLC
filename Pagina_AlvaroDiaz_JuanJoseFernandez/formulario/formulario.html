@@ -9,7 +9,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   
 
-  <link rel="stylesheet" href="../estilos/estilo.css">
+  <link rel="stylesheet" href="../estilos/estilos.css">
+  <link rel="stylesheet" href="../estilos/formulario.css">
   
 </head>
 
@@ -27,29 +28,65 @@
             <a href="../JavaScript/javaScript.html">JavaScript</a>
             <a href="../Bootstrap/Bootstrap.html">Bootstrap</a>
             <a href="../Jquery/jquery.html">JQuery</a>
-
           </div>
+
         </div>
 
       </div>
 
       <div class="headerLogo">
-        <a href="../index.html"><img src="../resources/logo.png" alt=""></a>      </div>
+        <img src="../resources/logo.png" alt="">
+      </div>
 
     </div>
   </header>
 
   <div class="contenido">
     <form>
-        <input type="submit" value="Enviar Formulario">
+        <p>
+          Introduzca su nombre: <input type="text" name="nombre" required>
+        </p>
+
+        <p>
+          Género:<br>
+          <input type="radio" name="genero" value="Hombre">Hombre <br>
+          <input type="radio" name="genero" value="Mujer">Mujer <br>
+          <input type="radio" name="genero" value="Otro">Otro <br>
+          <input type="radio" name="genero" value="Na" checked>Prefiero no decirlo <br>
+        </p>
+
+        <p>
+          ¿Porqué se registra? <br><br>
+          <textarea name="motivo" rows="2" cols="16" required></textarea>
+        </p>
+
+        <p>
+          Lenguajes que controlas: <br>
+          <input type="checkbox" name="lenguaje" value="HTML">HTML <br>
+          <input type="checkbox" name="lenguaje" value="HTML">CSS <br>
+          <input type="checkbox" name="lenguaje" value="HTML">JavaScript <br>
+          <input type="checkbox" name="lenguaje" value="HTML">Java <br>
+        </p>
+
+        <input type="hidden" name="usuId" value="1">
+
+        <input type="button" onclick="alert('Bien Hecho!')" value="Pulsame"> <br> <br>
+
+        <label for="desp">Elije sabor:</label>
+        <select name="desp" id="desp">
+          <option value="nata">nata</option>
+          <option value="chocolate">chocolate</option>
+          <option value="menta">menta</option>
+        </select> <br> <br> <br>
+        <input type="submit" value="Enviar Formulario" formaction="gracias.html">
     </form>
   </div>
   
   <footer>
     <div class="footer">
       <div class="redesSociales">
-        <a href="https://www.instagram.com/" target="_blank"> <img src="../resources/insta.png" /></a>
-        <a href="https://twitter.com/" target="_blank"> <img src="../resources/twitter.png" /> </a>
+        <a href="https://www.instagram.com/" target="_blank"> <img src="resources/insta.png" /></a>
+        <a href="https://twitter.com/" target="_blank"> <img src="resources/twitter.png" /> </a>
 
       </div>
       <div class="autores">
